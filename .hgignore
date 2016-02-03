@@ -1,0 +1,5 @@
+syntax: glob
+Lab.Presentation.Tests/bin/
+Lab.Presentation.Tests/obj/
+Lab.Presentation/bin/
+Lab.Presentation/obj/
