@@ -56,10 +56,6 @@ else
             <h2>Log in</h2>
             @Html.Partial("_Login")
         </section>
-        <section id="socialLoginPanel">
-            <h2>Log in using another service</h2>
-            @Html.Action("ExternalLoginsList", "Account", new { ReturnUrl = ViewBag.ReturnUrl })
-        </section>
         <p>First time here? <a id="showRegister">Sign up</a></p>
     </div>
     <div class="todoList" id="registerPanel">
@@ -69,7 +65,6 @@ else
     </div>
 }
 </div>
-
 @if (@User.Identity.IsAuthenticated)
 {
     @section scripts {

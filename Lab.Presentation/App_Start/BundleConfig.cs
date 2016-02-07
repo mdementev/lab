@@ -52,6 +52,17 @@ namespace Lab.Presentation
                         "~/Content/themes/base/jquery.ui.datepicker.css",
                         "~/Content/themes/base/jquery.ui.progressbar.css",
                         "~/Content/themes/base/jquery.ui.theme.css"));
+
+            // Materialize
+            bundles.Add(new StyleBundle("~/Content/materialize").Include(
+                        "~/Content/materialize/css/materialize*",
+                        "~/Content/materialize/font/material-design-icons/Material-Design-Icons.eot",
+                        "~/Content/materialize/font/material-design-icons/Material-Design-Icons.svg",
+                        "~/Content/materialize/font/material-design-icons/Material-Design-Icons.ttf",
+                        "~/Content/materialize/font/material-design-icons/Material-Design-Icons.woff"));
+
+            bundles.Add(new ScriptBundle("~/bundles/materialize").Include(
+                        "~/Scripts/materialize/materialize*"));
         }
     }
 }
